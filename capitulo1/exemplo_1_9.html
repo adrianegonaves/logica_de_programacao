@@ -1,0 +1,17 @@
+<!-- Exemplo 1.9 – Cálculo do valor do jantar -->
+<!-- c) Elaborar um programa que leia o valor de um jantar. Calcule e informe o
+valor da taxa do garçom (10%) e o valor total a ser pago.
+Valor do Jantar R$: 80.00
+Taxa do Garçom R$: 8.00
+Total a Pagar R$: 88.00 -->
+
+<meta charset="UTF-8">
+<script>
+    // lê um dado de entrada
+    let dinnerPrice = Number(prompt("Digite o valor do jantar R$: "))
+    let percentage = 0.10
+    let rate = dinnerPrice * percentage
+    let total = rate + dinnerPrice
+    // exibe uma resposta
+    window.alert("Taxa do graçon é R$" + rate.toFixed(2) + "\nTotal a pagar é R$ " + total.toFixed(2))
+</script>

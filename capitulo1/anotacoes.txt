@@ -1,0 +1,189 @@
+
+📌 O que é algoritmo ?
+
+Algoritmo é uma sequência de passos/comandos  serem executados para a realização de uma tarefa, em um tempo finito.
+-------------------------------------------------------------------------------------------
+📌 Roteiro para resolver a maioria dos programas iniciais
+
+a) Leia os dados de entrada.
+b) Realize o processamento dos dados.
+c) Apresente a saída dos dados.
+-------------------------------------------------------------------------------------------
+📌 Tríade do desenvolvimento web
+
+🌐 O HTML serve para descrever o conteúdo de uma página web e definir a marcação semântica (significado) dos elementos que compõem a página. 
+
+💅🏻 O CSS determina os estilos e a formatação dos elementos, ou seja, utiliza-se o CSS para definir a aparência do site – cores, bordas, espaçamentos etc. É a apresentação da
+página em si. 
+
+🗂️ JavaScript é utilizada para definir o comportamento dos elementos da página. Os códigos escritos em JavaScript, também chamados de scripts, são interpretado diretamente pelos navegadores web.
+-------------------------------------------------------------------------------------------
+📌 Cliente e servidor 
+
+Mas o que significa dizer que uma linguagem roda no lado do cliente?
+Significa que o próprio navegador web (Chrome,Internet Explorer/Edge, Firefox, Safari, Opera) deve conterfuncionalidades capazes de interpretar o código JavaScript e executá-lo.
+
+Já as linguagens que rodam no lado do servidor são executadas em um programa instalado no servidor web (Apache, IIS) e retornam para a máquina do cliente apenas o código resultante dessa execução. PHP, ASP, Java, C#, Python e também JavaScript são exemplos de linguagens que rodam no lado do servidor.
+-------------------------------------------------------------------------------------------
+📌 Caixas de diálogo
+
+As caixas de diálogo são janelas modais que são exibidas no navegador com o objetivo de interagir com a pessoa usuária da página. Por meio delas é possível exibir alertas, fazer perguntas e obter respostas.
+
+Window.alert()
+    O método alert() é indicado para quando é preciso informar algo à pessoa usuária, como avisar sobre uma falha no preenchimento de um formulário, dar boas-vindas em um novo cadastro efetuado em uma página e muitas outras situações. Para demonstrar o seu funcionamento.
+    <script>
+         window.alert("Bem-vindo ao Mundo JavaScript!");
+    </script>
+
+Window.confirm()
+    Outro tipo de caixa de diálogo é o método confirm(). Seu objetivo é permitir que a pessoa usuária da página decida se deseja ou não executar uma ação determinada. Para isso, exibe uma janela modal com uma mensagem e dois botões: um de confirmação e outro que cancela a ação.
+    <script>
+        window.confirm("Deseja sair do site ?");
+    </script>
+
+Window.prompt()
+    O próximo tipo de caixa de diálogo é o método prompt(). Seu objetivo é obter alguma informação da pessoa usuária da página. 
+    <script>
+    let name = prompt("Qual é seu nome?");
+        window.alert("Olá " + name)
+    </script> 
+-------------------------------------------------------------------------------------------
+📌Variáveis
+
+As variáveis são espaços alocados na memória do computador que
+permitem guardar informações e trabalhar com elas.
+
+Em JavaScript, os nomes de variáveis não podem:
+• Conter espaços.
+• Começar por número.
+• Conter caracteres especiais, como +,-,*, /, %, (,),{,},!,@,#.
+• Utilizar nomes de palavras reservadas da linguagem, como function,
+var, new, for ou return.
+
+Para declarar uma variável em JavaScript, utiliza-se o comando:
+Em JavaScript, a atribuição de valor para uma variável é feita
+com o sinal “=”.
+
+let nome = "Pedro";
+
+let
+    Declara uma variável local de escopo do bloco, opcionalmente, inicializando-a com um valor.
+const
+
+    Declara uma constante de escopo de bloco, apenas de leitura.
+
+-------------------------------------------------------------------------------------------
+📌 O que é CamelCase?
+é uma convenção de nomemclatura usada para deixar o código mais legível para outros desenvolvedores. 
+É uma denominação em inglês para a prática de escrever palavras compostas ou frases.
+É uma boa pratica :) 
+É mais utilizada na declaração de variáveis e atributos.
+é denomidado como “lowerCamelCase"
+
+-------------------------------------------------------------------------------------------
+📌 TAG HTML 
+
+▶ ️<script> códigos JavaScript devem ser delimitados </script>
+
+▶ ️<meta charset="UTF-8" 
+tag ou nesse caso metatag, que serve para ajustar os caracteres de acentuação a serem exibidos pela página.
+-------------------------------------------------------------------------------------------
+📌 Comentarios 
+
+Em JavaScript, os comentários podem ser inseridos para uma linha ou
+várias, utilizando os seguintes caracteres:
+
+// para comentários de uma linha
+/*
+para comentários de várias linhas
+*/
+-------------------------------------------------------------------------------------------
+📌 Métodos 
+
+🎟️ Number()
+Number() pode ser usado para converter variáveis ​​JavaScript em números:
+Number(true);     // retorna 1
+Number(false);    // retorna 0
+Number("10");     // retorna 10
+Number("  10");   // retorna 10
+Number("10  ");   // retorna 10
+Number(" 10  ");  // retorna 10
+Number("10.33");  // retorna 10.33
+Number("10,33");  // retorna NaN
+Number("10 33");  // retorna NaN
+Number("João");   // retorna NaN
+
+🎟️ parseInt() 
+parseInt()analisa uma string e retorna um número inteiro. Espaços são permitidos. Somente o primeiro número é retornado:
+
+parseInt("10");        // Retorna 10
+parseInt("10.33");     // Retorna 10
+parseInt("10 20 30");  // Retorna 10
+parseInt("10 years");  // Retorna 10
+parseInt("years 10");  // Retorna NaN
+
+
+🎟️toFixed()
+toFixed() retorna uma string com o número escrito com um número especificado de casas decimais:
+let x = 9.656;
+x.toFixed(0);           // retorna 10
+x.toFixed(2);           // retorna 9.66
+x.toFixed(4);           // retorna 9.6560
+x.toFixed(6);           // retorna 9.656000
+
+
+-------------------------------------------------------------------------------------------
+🎲 Tipos de Dados
+
+Um booleano, em ciência da computação, é um tipo de dado lógico que pode ter apenas um de dois valores possíveis: verdadeiro ou falso.
+
+Null
+Em ciência da computação, um valor nulo representa uma referencia que aponta, geralmente de maneira intencional, para um objeto ou endereço de memória inválido ou inexistente.
+
+Undefined
+Um valor primitive automaticamente atribuido para variaveis que foram recentemente declaradas ou para arguments formais para qual não existem argumentos atualmente.
+
+Number
+No JavaScript, Number é um tipo de dado numérico no double-precision 64-bit floating point format (IEEE 754). Em outras linguagens de programação diferentes tipos numéricos podem existir, por exemplo: Integers (Inteiros), Floats (Pontos Flutuantes), Doubles (Dobros), ou Bignums.
+
+String
+Em qualquer linguagem de programação, uma string é uma sequência de caracteres usados para representar texto
+
+typeof
+O operador typeof retorna uma string indicando o tipo de um operando.
+// Números - Numéricos
+
+typeof 37 === 'number';
+typeof 3.14 === 'number';
+typeof Math.LN2 === 'number';
+typeof Infinity === 'number';
+typeof NaN === 'number'; // Apesar de ser "Não-Numérico"
+typeof Number(1) === 'number'; // mas nunca utilize desta forma!
+
+// Strings - Seqüências de caracteres
+typeof "" === 'string';
+typeof "bla" === 'string';
+typeof (typeof 1) === 'string'; // typeof sempre retorna uma string
+typeof String("abc") === 'string'; // mas nunca utilize desta forma!
+
+// Booleans - Lógicos booleanos
+typeof true === 'boolean';
+typeof false === 'boolean';
+typeof Boolean(true) === 'boolean'; // mas nunca utilize desta forma!
+
+// Undefined - Indefinidos
+typeof undefined === 'undefined';
+typeof blabla === 'undefined'; // uma variável indefinida
+
+// Objetos
+typeof {a:1} === 'object';
+typeof [1, 2, 4] === 'object'; // use Array.isArray ou Object.prototype.toString.call para diferenciar os objetos das arrays
+typeof new Date() === 'object';
+
+typeof new Boolean(true) === 'object'; // isto é confuso, portanto não use desta forma!
+typeof new Number(1) === 'object'; // isto é confuso, portanto não use desta forma!
+typeof new String("abc") === 'object';  // isso também é confuso, assim evite usar esta construção!
+
+// Funções
+typeof function(){} === 'function';
+typeof Math.sin === 'function';

@@ -1,0 +1,21 @@
+<!-- c) Elaborar um programa para uma loja, o qual leia o preço de um produto e
+informe as opções de pagamento da loja. Calcule e informe o valor para
+pagamento à vista com 10% de desconto e o valor em 3x.
+Exemplo:
+Preço R$: 60.00
+À Vista R$: 54.00
+Ou 3x de R$: 20.00 -->
+
+<meta charset="UTF-8">
+<script>
+    // lê um dado de entrada
+    let price = Number(prompt("Digite o preço do produto R$: "))
+    let rate = 0.10
+    let percent = price * rate
+    let numberOfPaeces = 3
+    let spotPrice = price - percent
+    let installmentPrice = price/numberOfPaeces
+
+    // exibe uma resposta
+    window.alert("Valor à vista R$: " + spotPrice.toFixed(2) + "\n Ou 3X de R$: " + installmentPrice)
+</script>
